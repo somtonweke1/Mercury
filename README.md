@@ -34,3 +34,68 @@ Implemented a hybrid approach combining:
 - Docker for containerization
 
 ## 📁 Project Structure 
+
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Python 3.8+
+- Docker and Docker Compose
+- Kafka
+- Redis
+
+## 🔧 Installation
+
+bash
+Clone the repository
+git clone https://github.com/username/project-mercury.git
+Navigate to the project directory
+cd project-mercury
+Install dependencies
+pip install -r requirements.txt
+Start the services
+docker-compose up -d
+
+
+## 💻 Usage
+
+### REST API Endpoints
+
+bash
+Impute data
+curl -X POST "http://localhost:8000/api/v1/impute" \
+-H "Content-Type: application/json" \
+-d '{"trading_pair": "BTC/USD", "timeframe": "1m", "data": [1000.0, 1001.0]}'
+
+
+
+### Supported Trading Pairs
+- BTC/USD (depth: 10, min_volume: 1.0)
+- ETH/USD (depth: 10, min_volume: 5.0)
+- SOL/USD (depth: 10, min_volume: 2.0)
+- AVAX/USD (depth: 10, min_volume: 3.0)
+
+## 🧪 Testing
+
+bash
+Run tests
+pytest tests/
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🗺️ Roadmap
+
+- [x] Initial k-NN implementation
+- [x] GAN integration
+- [x] Kafka real-time processing
+- [x] Multi-pair trading support
+- [x] REST API implementation
+- [ ] WebSocket support
+- [ ] Advanced monitoring dashboards
+- [ ] Auto-scaling configuration
+
+## 📊 Project Status
+
+Project is: _in active development_
