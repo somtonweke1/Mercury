@@ -48,7 +48,8 @@ Before you begin, ensure you have met the following requirements:
 
 bash
 Clone the repository
-git clone https://github.com/username/project-mercury.git
+git clone 
+https://github.com/username/project-mercury.git
 Navigate to the project directory
 cd project-mercury
 Install dependencies
